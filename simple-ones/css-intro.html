@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Intro</title>
+
+    <style>
+    html {
+        background: rgb(113, 213, 113);
+    }
+        </style>
+
+</head>
+
+<body>
+    
+    <h1>Introduction to CSS</h1>
+
+    <ol>
+    <h3><li>Why do we need CSS?</li></h3>
+
+    <p>Today there are many ways of adding styling to your website:</p>
+        <ul>
+        <li>CSS - every developer must know this one</li>
+        <li>Sass</li>
+        <li>Less</li>
+    </ul>
+    
+    <p>This was not always the case:</p>
+    <ul>
+        <li>Early days : No variation in websites at all.</li>
+        <li>1997 : W3 proposed HTML 3. This allowed a font tag to define color, size, center etc 
+            (all deprecated now as websites got too cluttered).</li>
+        <li>1996 : CSS had already started</li>
+    </ul>
+
+    <p>CSS allows you to style your websites without changing or cluttering the functional parts of the code.</p>
+
+    <hr />
+
+    <h3><li>How to add CSS</li></h3>
+
+    <p>There are essentially 3 methods</p>
+
+    <ul>
+        <li>Inline - one element on the page with styling placed in the opening tag</li>
+        <li>Internal - one whole page with styling in the head element</li>
+        <li>External - whole website and multiple pages using a CSS style sheet linked in the header of each html page</li>
+    </ul>
+
+    <p><strong><u>Inline</u></strong></p>
+        <p>&lt;p style=&quot;property:value &quot; &gt;Element being styled&lt;/p&gt; </p>
+        <p style="background:yellow">For example in this paragraph element, setting the property to 'background' and the 
+            value to 'yellow' does this.</p>
+
+    <p><strong><u>Internal</u></strong></p>
+        <p>By adding a style to the head element of this entire html page I have turned the page background a shade of green.</p>
+        <p>&lt;style&gt; html {background : rgb(113, 213, 113);}&lt;/style&gt;</p>
+
+    <p><strong><u>External</u></strong></p>
+            <p>Instead of coding the style in the header you can add to to a styles.css file and link it in the head element</p>
+            <p>&lt;link <br />
+                rel = "stylesheet" <br />
+                href="./styles.css" <br />
+                /&gt;
+            </p>
+            <p>And in the styles.css file you add: <br/>
+                html {background : rgb(113, 213, 113);}</p>
+
+    <a href="../5.1 Adding CSS/add-css.html" target="_blank">Here is the course example</a>
+
+    <hr />
+
+    <h3><li>Selectors</li></h3>
+    <p>You use a CSS selector to target something you want styled and then assign a property and a value (say background: blue).</p>
+    <ul>
+        <li>Element selectors targets the html element tags:</li>
+            <ul>
+                <li>h1 - all h1 headings</li>
+                <li>a - all the anchor tags</li>
+                <li>p - all the paragraph tags</li>
+                <br /></ul>
+        <li>Class selector: .user-class <br/>
+            For example....&lt;h2 class=&quot;user-class&quot;&gt;An h2 element with an assigned class gets styled&lt;/h2&gt;<br /><br /></li>
+        <li>ID selector (one <u>unique</u> element per file): #main <br/>
+            For example....&lt;h2 id=&quot;main&quot;&gt;An h2 element with ID=main class  gets styled&lt;/h2&gt; <br /><br />  </li>
+
+        <li>Attribute selectors (id, class, draggable, src, href etc): p[draggable] {color:red}<br />
+            You can take these a step further by targeting the <u>attribute and the value</u>, say if p[draggable="true"] {color:red}.<br /><br />     
+        </li>
+
+        <li>The universal selector is *. So * {color:red} targets everything and makes the text red.</li>
+    </ul>
+
+    <br />
+    <a href="../5.3 CSS selectors/css-selectors.html" target="_blank">Here is the course example.</a>
+
+
+    <hr />
+
+
+    <h3><li>Colours</li></h3>
+
+    <p>Set the property and the value. For example:</p>
+    <p>background-color: blue (this is the background / page colour)</p>
+    <p>color: blue (this is the text colour)</p>
+    <p>Check out Angela's links to MDN for 'named-color' and the Color Hunt Website.</p>
+    <p> You can use named colours (eg: red), or decimal RGB (255, 0, 0) or hexadecimal (#FF0000) and they are all the same.</p>
+    <p>You can target the entire body of an html page if you want to.</p>
+    <br />
+    <p>Here is the course <a href="../5.4 Spanish colours/spanish-colours.html" target="_blank">example</a> 
+        to change make the text colours match the block colours, and force all the blocks to be 200px squares.</p>
+
+    <hr />
+
+    <h3><li>Font Properties</li></h3>
+    
+
+    <hr />
+
+    <h3><li>Blah</li></h3>
+
+    <hr />
+
+    <h3><li>Blah</li></h3>
+
+    <hr />
+
+
+
+    </ol>
+
+    <button><a href = "css-intermediate.html">Next: Intermediate CSS</a></button>
+    <button><a href = "../revision.html">Back to Revision page</a></button>   
+    <button><a href = "../index.html">Back to main Page</a></button>
+
+</body>
+
+</html>
